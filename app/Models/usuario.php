@@ -9,6 +9,6 @@ class usuario extends Model
 {
     use HasFactory;
     protected $fillable  = [
-        'nom', 'ap', 'am','especialidad'
+        'id_usuario','nom', 'ap', 'am','especialidad','id_personas','updated_at','created_at'
     ];
 }

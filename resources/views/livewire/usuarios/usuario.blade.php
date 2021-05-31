@@ -18,9 +18,9 @@
                     </div>
                 </div>
             @endif
-            <button wire:click="create()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded my-3">Agrega un premio</button>
+            <button wire:click="create()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded my-3">Agrega un usuario</button>
             @if($isOpen)
-                @include('livewire.usuario.create')
+                @include('livewire.usuarios.create')
             @endif
             <table class="table-fixed w-full">
                 <thead>
@@ -33,16 +33,16 @@
                 </tr>
                 </thead>
                 <tbody>
-                @foreach($usuarios as $user)
+                @foreach($usuario as $user)
                     <tr>
-                        <td class="border px-4 py-2">{{ $user->id }}</td>
-                        <td class="border px-4 py-2">{{ $user->name }}</td>
+                        <td class="border px-4 py-2">{{ $user->id_usuario }}</td>
+                        <td class="border px-4 py-2">{{ $user->nom }}</td>
                         <td class="border px-4 py-2">{{ $user->ap }}</td>
                         <td class="border px-4 py-2">{{ $user->am }}</td>
                         <td class="border px-4 py-2">{{ $user->especialidad }}</td>
                         <td class="border px-4 py-2">
-                            <button wire:click="edit({{ $post->id }})" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Editar</button>
-                            <button wire:click="delete({{ $post->id }})" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Eliminar</button>
+                            <button wire:click="edit({{ $user->id_usuario }})" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Editar</button>
+                            <button wire:click="delete({{ $user->id_usuario }})" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">Eliminar</button>
                         </td>
                     </tr>
                 @endforeach

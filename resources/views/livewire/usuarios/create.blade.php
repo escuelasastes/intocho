@@ -10,23 +10,23 @@
       <div class="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
         <div class="">
               <div class="mb-4">
-                  <label for="exampleFormControlInput1" class="block text-gray-700 text-sm font-bold mb-2">nombre:</label>
-                  <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="exampleFormControlInput1" placeholder="Enter Title" wire:model="title">
+                  <label for="exampleFormControlInput1" class="block text-gray-700 text-sm font-bold mb-2">Nombre:</label>
+                  <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" placeholder="Nombre" wire:model="nom">
                   @error('nombre') <span class="text-red-500">{{ $message }}</span>@enderror
               </div>
               <div class="mb-4">
-                  <label for="exampleFormControlInput2" class="block text-gray-700 text-sm font-bold mb-2">apellido paterno:</label>
-                  <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="exampleFormControlInput2" wire:model="body" placeholder="Enter Body"></textarea>
+                  <label for="exampleFormControlInput2" class="block text-gray-700 text-sm font-bold mb-2">Apellido paterno:</label>
+                  <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="ap" wire:model="ap" placeholder="Apellido Paterno">
                   @error('apellido paterno') <span class="text-red-500">{{ $message }}</span>@enderror
               </div>
               <div class="mb-4">
-                  <label for="exampleFormControlInput2" class="block text-gray-700 text-sm font-bold mb-2">apellido materno:</label>
-                  <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="exampleFormControlInput2" wire:model="body" placeholder="Enter Body"></textarea>
+                  <label for="exampleFormControlInput2" class="block text-gray-700 text-sm font-bold mb-2">Apellido materno:</label>
+                  <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="am" wire:model="am" placeholder="Apellido Materno">
                   @error('apellido materno') <span class="text-red-500">{{ $message }}</span>@enderror
               </div>
               <div class="mb-4">
-                  <label for="exampleFormControlInput2" class="block text-gray-700 text-sm font-bold mb-2">especialidad:</label>
-                  <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="exampleFormControlInput2" wire:model="body" placeholder="Enter Body"></textarea>
+                  <label for="exampleFormControlInput2" class="block text-gray-700 text-sm font-bold mb-2">Especialidad:</label>
+                  <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="especialidad" wire:model="especialidad" placeholder="Especialidad"></textarea>
                   @error('especialidad ') <span class="text-red-500">{{ $message }}</span>@enderror
               </div>
               
