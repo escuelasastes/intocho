@@ -42,7 +42,7 @@ class usuarios extends Component
             'especialidad' => 'required'
         ]);  
        
-        usuario::updateOrCreate(['id' => $this->id],[
+        usuario::updateOrCreate(['id' => $this->id_usuario],[
             'nom' => $this->nom,
             'ap' => $this->ap,
             'am' => $this->am,
@@ -50,7 +50,7 @@ class usuarios extends Component
         ]);   
          
         session()->flash('message', 
-        $this->id ? 'usuario actualizado.' : 'usuario agragado con exito.');
+        $this->id_usuario ? 'usuario actualizado.' : 'usuario agragado con exito.');
 
         $this->closeModal();
         $this->resetInputFields();

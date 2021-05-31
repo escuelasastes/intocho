@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 31-05-2021 a las 04:23:28
+-- Tiempo de generación: 31-05-2021 a las 04:42:07
 -- Versión del servidor: 10.4.19-MariaDB
 -- Versión de PHP: 8.0.6
 
@@ -278,8 +278,7 @@ CREATE TABLE `sessions` (
 --
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('cmI0o0N7lEwKcB32EGw4FQxnePsbhA9S7HM2oMFJ', 2, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoicWpsam95aUZabGRXSjY0ejRveUVab1NtZzVTcG9lcjdhTFZXZGNaTSI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzA6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC91c3VhcmlvcyI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjI7czoxNzoicGFzc3dvcmRfaGFzaF93ZWIiO3M6NjA6IiQyeSQxMCRvVkNoTjZqVzdieE4ucXhSMXlQTXZ1Z1Nabzc2aE1qNEFRcHB6NVlpZmcvWGMwTFFidXdEbSI7czoyMToicGFzc3dvcmRfaGFzaF9zYW5jdHVtIjtzOjYwOiIkMnkkMTAkb1ZDaE42alc3YnhOLnF4UjF5UE12dWdTWm83NmhNajRBUXBwejVZaWZnL1hjMExRYnV3RG0iO30=', 1622427755),
-('UltqH2YvHJTkUvebsZXNTL1JabkaZTM1TbNKsCHE', 2, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:88.0) Gecko/20100101 Firefox/88.0', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoiNFoxODRNMDhXY0drQlZtcUJ2R2p3VGltOEEwekpiSnFOR003MVAxNyI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzE6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9kYXNoYm9hcmQiO31zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToyO3M6MTc6InBhc3N3b3JkX2hhc2hfd2ViIjtzOjYwOiIkMnkkMTAkb1ZDaE42alc3YnhOLnF4UjF5UE12dWdTWm83NmhNajRBUXBwejVZaWZnL1hjMExRYnV3RG0iO3M6MjE6InBhc3N3b3JkX2hhc2hfc2FuY3R1bSI7czo2MDoiJDJ5JDEwJG9WQ2hONmpXN2J4Ti5xeFIxeVBNdnVnU1pvNzZoTWo0QVFwcHo1WWlmZy9YYzBMUWJ1d0RtIjt9', 1622423624);
+('ciCgLhoOyUsSHzHDgXDr9KqJwrcimeUU0I3IGDi0', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36', 'YTo2OntzOjY6Il90b2tlbiI7czo0MDoibkpWT3hZTUIzajE5QW9SQVVBVGR6NnpLRWF2SWtjVG9pYVIzcE1NWiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzA6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC91c3VhcmlvcyI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjE6e2k6MDtzOjc6Im1lc3NhZ2UiO31zOjM6Im5ldyI7YTowOnt9fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjE7czoxNzoicGFzc3dvcmRfaGFzaF93ZWIiO3M6NjA6IiQyeSQxMCR3R3A4ZUsubHlKL0x5V0tlRjZTTUFlR2lWZTZPR0N0L3ZGcU5CUzN0aGxsRml0eWFndHYwbSI7czoyMToicGFzc3dvcmRfaGFzaF9zYW5jdHVtIjtzOjYwOiIkMnkkMTAkd0dwOGVLLmx5Si9MeVdLZUY2U01BZUdpVmU2T0dDdC92RnFOQlMzdGhsbEZpdHlhZ3R2MG0iO30=', 1622428858);
 
 -- --------------------------------------------------------
 
@@ -368,7 +367,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `two_factor_secret`, `two_factor_recovery_codes`, `remember_token`, `current_team_id`, `profile_photo_path`, `created_at`, `updated_at`) VALUES
-(2, 'Alexis Orlando R.L.', 'alexisrebollarlopez02@gmail.com', NULL, '$2y$10$oVChN6jW7bxN.qxR1yPMvugSZo76hMj4AQppz5Yifg/Xc0LQbuwDm', NULL, NULL, NULL, NULL, NULL, '2021-05-31 06:13:44', '2021-05-31 06:13:44');
+(1, 'Alexis', 'alexisrebollarlopez02@gmail.com', NULL, '$2y$10$wGp8eK.lyJ/LyWKeF6SMAeGiVe6OGCt/vFqNBS3thllFityagtv0m', NULL, NULL, NULL, NULL, NULL, '2021-05-31 07:35:50', '2021-05-31 07:35:50');
 
 -- --------------------------------------------------------
 
@@ -382,17 +381,17 @@ CREATE TABLE `usuarios` (
   `ap` varchar(50) NOT NULL,
   `am` varchar(50) NOT NULL,
   `especialidad` varchar(50) NOT NULL,
-  `id_personas` int(11) DEFAULT NULL,
   `updated_at` datetime NOT NULL,
-  `created_at` datetime NOT NULL
+  `created_at` datetime NOT NULL,
+  `id_personas` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `usuarios`
 --
 
-INSERT INTO `usuarios` (`id`, `nom`, `ap`, `am`, `especialidad`, `id_personas`, `updated_at`, `created_at`) VALUES
-(1, 'Alexis', 'Rebollar', 'Lopez', 'Estudiante', NULL, '2021-05-31 01:46:55', '2021-05-31 01:46:55');
+INSERT INTO `usuarios` (`id`, `nom`, `ap`, `am`, `especialidad`, `updated_at`, `created_at`, `id_personas`) VALUES
+(1, 'Alexis', 'REBOLLAR', 'Lopez', 'Estudiante', '2021-05-31 02:40:58', '2021-05-31 02:40:58', NULL);
 
 --
 -- Índices para tablas volcadas
@@ -667,7 +666,7 @@ ALTER TABLE `team_user`
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
