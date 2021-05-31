@@ -42,7 +42,7 @@ class usuarios extends Component
             'especialidad' => 'required'
         ]);  
        
-        usuario::updateOrCreate(['id_usuario' => $this->id_usuario],[
+        usuario::updateOrCreate(['id' => $this->id],[
             'nom' => $this->nom,
             'ap' => $this->ap,
             'am' => $this->am,
@@ -50,7 +50,7 @@ class usuarios extends Component
         ]);   
          
         session()->flash('message', 
-        $this->user_id ? 'usuario actualizado.' : 'usuario agragado con exito.');
+        $this->id ? 'usuario actualizado.' : 'usuario agragado con exito.');
 
         $this->closeModal();
         $this->resetInputFields();
@@ -58,7 +58,7 @@ class usuarios extends Component
     }
     public function edit($id){
         $usuario = usuario::findOrFail($id);
-        $this->id_usuario=$id;
+        $this->id=$id;
         $this->nom = $usuario->nom;
         $this->ap = $usuario->ap;
         $this->am = $usuario->am;
